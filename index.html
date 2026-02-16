@@ -2495,7 +2495,123 @@
             animation-duration: 1.5s;
             animation-iteration-count: 1;
         }
-        
+        /* --- CSS CHO KHỐI LỄ VU QUY MỚI --- */
+
+/* 1. Tăng chiều cao Section chứa sự kiện để đủ chỗ cho khối mới */
+#SECTION_SUKIEN {
+    height: 1170px !important; 
+}
+
+/* 2. Đẩy khối Lễ Thành Hôn (Cũ) xuống dưới */
+#GROUP125 {
+    top: 905px !important; 
+}
+
+/* 3. Định vị khối Lễ Vu Quy (Mới) vào vị trí cũ của Lễ Thành Hôn */
+#GROUP_VUQUY {
+    width: 390.282px;
+    height: 200.679px;
+    top: 648.976px;
+    left: 14.859px;
+}
+
+/* Style Box nền */
+#BOX_VUQUY {
+    width: 390.282px;
+    height: 159px;
+    top: 41.6788px;
+    left: 0px;
+}
+#BOX_VUQUY > .ladi-box {
+    background-color: rgb(66, 62, 56);
+    opacity: 0.7;
+}
+
+/* Style Tiêu đề */
+#HEADLINE_VUQUY {
+    width: 200px;
+    top: 45.2685px;
+    left: 38.1265px;
+}
+#HEADLINE_VUQUY > .ladi-headline {
+    font-family: Philosopher, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.6;
+    color: rgb(239, 203, 132);
+    text-decoration-line: underline;
+}
+
+/* Style Nhóm Thời gian */
+#GROUP_TIME_VQ {
+    width: 279.537px;
+    height: 45.0287px;
+    top: 83.359px;
+    left: 11.5897px;
+}
+#TEXT_TIME_VQ {
+    width: 254px;
+    top: 0.0287px;
+    left: 25.5368px;
+}
+#TEXT_TIME_VQ > .ladi-paragraph, 
+#TEXT_LOC_VQ > .ladi-paragraph {
+    font-family: Mulish, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgb(222, 222, 222);
+}
+#ICON_TIME_VQ {
+    width: 22.6615px;
+    height: 22.6615px;
+    top: 0px;
+    left: 0px;
+}
+#ICON_TIME_VQ svg, #ICON_LOC_VQ svg {
+    fill: rgb(255, 255, 255);
+}
+
+/* Style Nhóm Địa điểm */
+#GROUP_LOC_VQ {
+    width: 347.858px;
+    height: 45px;
+    top: 133.092px;
+    left: 14.2684px;
+}
+#TEXT_LOC_VQ {
+    width: 324px;
+    top: 0px;
+    left: 23.8581px;
+}
+#ICON_LOC_VQ {
+    width: 18.465px;
+    height: 18.4649px;
+    top: 0.643px;
+    left: 0px;
+}
+
+/* Style Ảnh bản đồ (Dùng lại ảnh bản đồ nhà gái th/22.jpg) */
+#IMAGE_MAP_VQ {
+    width: 131.167px;
+    height: 95.3418px;
+    top: 0px;
+    left: 249.579px;
+}
+#IMAGE_MAP_VQ > .ladi-image > .ladi-image-background {
+    width: 149.469px;
+    height: 163.5384px;
+    top: -58px;
+    left: -15.19658px;
+    background-image: url("th/23.jpg"); /* Ảnh bản đồ nhà gái */
+}
+
+/* Hiệu ứng xuất hiện */
+#GROUP_VUQUY.ladi-animation > .ladi-group {
+    animation-name: fadeInUp;
+    animation-delay: 0.2s;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+}
         #GROUP26,
         #BOX24 {
             width: 400px;
@@ -5698,8 +5814,8 @@
                     <div class='ladi-paragraph ladi-transition'>Tư gia : Số 25 - Thôn Hoa Đường - Xã Ứng Thiên - Hà Nội .</div>
                 </div>
                 <div id="PARAGRAPH87" class='ladi-element'>
-                    <div class='ladi-paragraph ladi-transition'>Con ông : <span style="font-weight: bold;">Đỗ Văn Biên</span>
-                        <br>Con bà : <span style="font-weight: bold;">Nguyễn Thị Thỏa</span>
+                    <div class='ladi-paragraph ladi-transition'>Con ông : <span style="font-weight: bold;">Nguyễn Thanh Hương</span>
+                        <br>Con bà : <span style="font-weight: bold;">Nguyễn Thị Lịch</span>
                         <br>
                     </div>
                 </div>
@@ -5736,8 +5852,8 @@
                     </div>
                 </div>
                 <div id="PARAGRAPH85" class='ladi-element'>
-                    <div class='ladi-paragraph ladi-transition'>Con ông : <span style="font-weight: bold;">Nguyễn Thanh Hương</span>
-                        <br>Con bà : <span style="font-weight: bold;">Nguyễn Thị Lịch</span>
+                    <div class='ladi-paragraph ladi-transition'>Con ông : <span style="font-weight: bold;">Đỗ Văn Biên</span>
+                        <br>Con bà : <span style="font-weight: bold;">Nguyễn Thị Thỏa</span>
                         <br>
                     </div>
                 </div>
@@ -5769,7 +5885,7 @@
                         <div id="GROUP120" class='ladi-element'>
                             <div class='ladi-group'>
                                 <div id="PARAGRAPH88" class='ladi-element'>
-                                    <div class='ladi-paragraph ladi-transition'>10:00 Thứ 3 Ngày 04/03/2026
+                                    <div class='ladi-paragraph ladi-transition'>10:00 Thứ 4 Ngày 04/03/2026
                                         <br>( Tức ngày 16/01/2026 âm lịch)
                                         <br>
                                     </div>
@@ -5817,7 +5933,7 @@
                         <div id="GROUP123" class='ladi-element'>
                             <div class='ladi-group'>
                                 <div id="PARAGRAPH180" class='ladi-element'>
-                                    <div class='ladi-paragraph ladi-transition'>10:00 Thứ 3 Ngày 04/03/2026
+                                    <div class='ladi-paragraph ladi-transition'>10:00 Thứ 4 Ngày 04/03/2026
                                         <br>( Tức ngày 16/01/2026 âm lịch)
                                         <br>
                                     </div>
@@ -5855,6 +5971,54 @@
                         </div>
                     </div>
                 </div>
+
+                <div id="GROUP_VUQUY" class="ladi-element">
+    <div class="ladi-group">
+        <div id="BOX_VUQUY" class="ladi-element">
+            <div class="ladi-box ladi-transition"></div>
+        </div>
+        <div id="HEADLINE_VUQUY" class="ladi-element">
+            <h3 class="ladi-headline ladi-transition">Lễ Vu Quy</h3>
+        </div>
+        
+        <div id="GROUP_TIME_VQ" class="ladi-element">
+            <div class="ladi-group">
+                <div id="TEXT_TIME_VQ" class="ladi-element">
+                    <div class="ladi-paragraph ladi-transition">
+                        14:00 Thứ 4 Ngày 04/03/2026<br>(Tức ngày 16/01/2026 âm lịch)
+                    </div>
+                </div>
+                <div id="ICON_TIME_VQ" class="ladi-element">
+                    <div class="ladi-shape ladi-transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100" fill="rgba(255, 255, 255, 1.0)"><use xlink:href="#shape_BfJNgDwNYp"></use></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="GROUP_LOC_VQ" class="ladi-element">
+            <div class="ladi-group">
+                <div id="TEXT_LOC_VQ" class="ladi-element">
+                    <div class="ladi-paragraph ladi-transition">
+                        Tư gia nhà Gái<br>Số 31 - Xóm 7 - Thôn Cao Lãm, Xã Vân Đình - Hà Nội
+                    </div>
+                </div>
+                <div id="ICON_LOC_VQ" class="ladi-element">
+                    <div class="ladi-shape ladi-transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100" fill="rgba(255, 255, 255, 1.0)"><use xlink:href="#shape_vHnHCKxlId"></use></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="IMAGE_MAP_VQ" class="ladi-element">
+            <div class="ladi-image ladi-transition">
+                <div class="ladi-image-background"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
                 <div id="GROUP125" class='ladi-element'>
                     <div class='ladi-group'>
                         <div id="BOX64" class='ladi-element'>
@@ -5865,7 +6029,7 @@
                         <div id="GROUP126" class='ladi-element'>
                             <div class='ladi-group'>
                                 <div id="PARAGRAPH182" class='ladi-element'>
-                                    <div class='ladi-paragraph ladi-transition'>15:00 Thứ 3 Ngày 04/03/2026
+                                    <div class='ladi-paragraph ladi-transition'>15:00 Thứ 4 Ngày 04/03/2026
                                         <br>( Tức ngày 16/01/2026 âm lịch)
                                         <br>
                                     </div>
